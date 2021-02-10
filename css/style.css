@@ -25,6 +25,11 @@
   --text-popup: #666666;
   --text-text-social: #444444;
 
+  /* form */
+
+  --form-grey: #D7DCDE;
+  --form-hover: #B4B9BB;
+
 }
 
 /* Global */
@@ -275,3 +280,17 @@ footer h3 {
 .footer-socials-list {
   list-style: none;
 }
+
+/* Modal */
+
+.heading-modal {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: bold;
+}
+
+.write-us-item {
+  line-height: 18px;
+  font-weight: bold;
+}
+
