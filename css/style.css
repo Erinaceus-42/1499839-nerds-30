@@ -294,3 +294,29 @@ footer h3 {
   font-weight: bold;
 }
 
+/* Catalog form */
+
+.legend-catalog {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.form-cost,
+.form-radio,
+.form-checkbox {
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--text-grey);
+}
+
+.form-radio-list,
+.form-checkbox-list,
+.template-filter-list,
+.template-list {
+  list-style: none;
+}
