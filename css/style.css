@@ -64,6 +64,10 @@ img {
   height: auto;
 }
 
+.hide {
+  display: none;
+}
+
 /* Greed */
 
 .page {
