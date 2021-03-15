@@ -102,7 +102,23 @@ img {
   font-weight: 500;
   background-color: transparent;
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: max-content 1fr max-content max-content;
+}
+
+.main-header-bar {
+  display: grid;
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  order: 1;
+  justify-self: center;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  margin-bottom: 108px;
+  margin-top: 78px;
 }
 
 .main-header-logo {
