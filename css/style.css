@@ -101,12 +101,9 @@ img {
   color: var(--text-black);
   font-weight: 500;
   background-color: transparent;
-  display: grid;
-  grid-template-columns: max-content 1fr max-content max-content;
-}
-
-.main-header-bar {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-title {
@@ -115,8 +112,6 @@ img {
   line-height: 55px;
   order: 1;
   justify-self: center;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
   margin-bottom: 108px;
   margin-top: 78px;
 }
@@ -167,11 +162,19 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+.btn-more {
+  display: inline-block;
+  padding: 15px 54px;
+  margin-top: 38px;
+}
+
 .slogan {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--text-black);
+  padding-bottom: 0 ;
+  margin-bottom: 25px;
 }
 
 /* Work */
@@ -220,11 +223,18 @@ h3 {
   grid-template-columns: 2fr 1fr;
   column-gap: 40px;
   margin-bottom: 75px;
-  border-bottom: 2px solid var(--basic-blue);
 }
 
 .about-us-text {
   justify-self: left;
+}
+
+.about-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
 }
 
 .about-us-promo {
@@ -269,6 +279,14 @@ td {
   color: var(--white);
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.btn-order1,
+.btn-order2,
+.btn-order3 {
+  padding: 15px 40px;
+  display: inline-block;
+  margin-top: 32px;
 }
 
 .btn-red,
@@ -316,11 +334,14 @@ td {
 /* Clients */
 
 .clients-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+  padding: auto;
+  border-top: 2px solid var(--basic-blue);
   border-bottom: 2px solid var(--basic-blue);
-  list-style: none;
 }
 
 .clients-item {
@@ -343,6 +364,7 @@ td {
 
 .img-map {
   background-color: var(--basic-light-grey);
+  margin-top: 80px;
 }
 
 footer h3 {
@@ -384,13 +406,22 @@ footer h3 {
   list-style: none;
   display: flex;
   width: 261px;
+  height: 81px;
   justify-content: space-between;
 }
 
 .footer-socials-item {
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-  width: 81px;
-  height: 81px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.socials-item-vk {
+  padding: 33px 27px;
+}
+
+.socials-item-fb {
+  padding: 31px 34px 28px 35px;
 }
 
 .footer-socials-item:hover {
@@ -450,8 +481,12 @@ footer h3 {
 .form-checkbox-list,
 .template-filter-list,
 .template-list,
-.pangination-list {
+.pangination-list,
+.about-us-list,
+.clients-list  {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Template */
