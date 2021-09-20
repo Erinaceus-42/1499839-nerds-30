@@ -132,6 +132,10 @@ img {
   justify-self: right;
 }
 
+.basket-img {
+  margin-right: 25px;
+}
+
 .site-navigation a,
 .basket a {
   color: var(--text-black);
@@ -223,6 +227,8 @@ h3 {
   grid-template-columns: 2fr 1fr;
   column-gap: 40px;
   margin-bottom: 75px;
+  border-top: 2px solid var(--basic-blue);
+  padding-top: 39px;
 }
 
 .about-us-text {
@@ -235,6 +241,20 @@ h3 {
   flex-direction: column;
   height: 120px;
   justify-content: space-between;
+}
+
+.about-us-item {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-item::before {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--red);
+  margin-right: 7px;
 }
 
 .about-us-promo {
@@ -258,11 +278,21 @@ h3 {
   color: var(--text-black);
   text-align: center;
   text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 31px;
+}
+
+table {
+  border-collapse: collapse;
+
 }
 
 th {
   font-size: 45px;
   font-weight: 700;
+  text-align: left;
+  padding-bottom: 22px;
+  text-align: left;
 }
 
 sup {
@@ -271,6 +301,7 @@ sup {
 
 td {
   line-height: 18px;
+  text-align: left;
 }
 
 /*buttton*/
@@ -362,9 +393,21 @@ td {
 
 /* Footer */
 
+.map {
+  background-color: var(--basic-blue);
+  background-image: url(https://goo.gl/maps/7NQHN9T8UGDmWsd98);
+  height: 416px;
+  width: 100%;
+  margin-top: 80px;
+}
+
 .img-map {
   background-color: var(--basic-light-grey);
   margin-top: 80px;
+}
+
+.iframe-map {
+  border: none;
 }
 
 footer h3 {
@@ -389,17 +432,20 @@ footer h3 {
   grid-template-columns: 1fr 2fr;
   column-gap: 40px;
   justify-items: left;
+  margin-top: 68px;
+  margin-bottom: 68px;
 }
 
 .socials {
   justify-self: left;
+
 }
 
 .heading-socials {
   font-size: 36px;
-  line-height: 36px;
   font-weight: 700;
   color: var(--text-black);
+  margin-bottom: 0;
 }
 
 .footer-socials-list {
