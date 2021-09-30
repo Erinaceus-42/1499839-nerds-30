@@ -104,6 +104,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
 }
 
 .page-title {
@@ -118,6 +119,7 @@ img {
 
 .main-header-logo {
   justify-self: left;
+  padding-bottom: 5px;
 }
 
 .site-navigation {
@@ -126,10 +128,13 @@ img {
   display: flex;
   width: 437px;
   justify-content: space-between;
+  padding-top: 8px ;
+  padding-right: 90px;
 }
 
 .basket {
   justify-self: right;
+  padding-top: 8px;
 }
 
 .basket-img {
@@ -166,10 +171,14 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+.slider-promo {
+  margin-top: 16px;
+}
+
 .btn-more {
   display: inline-block;
-  padding: 15px 54px;
-  margin-top: 38px;
+  padding: 14px 54px;
+  margin-top: 22px;
 }
 
 .slogan {
@@ -179,6 +188,24 @@ img {
   color: var(--text-black);
   padding-bottom: 0 ;
   margin-bottom: 25px;
+
+}
+
+.slider-img {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-btn-block {
+
+}
+
+.slider-btn {
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 18px;
+  height: 18px;
 }
 
 /* Work */
