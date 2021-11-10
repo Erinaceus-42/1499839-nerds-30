@@ -104,7 +104,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .page-title {
@@ -119,7 +119,7 @@ img {
 
 .main-header-logo {
   justify-self: left;
-  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .site-navigation {
@@ -128,13 +128,14 @@ img {
   display: flex;
   width: 437px;
   justify-content: space-between;
-  padding-top: 8px ;
-  padding-right: 90px;
+  padding-top: 25px ;
+  padding-right: 85px;
+  margin: 0px;
 }
 
 .basket {
   justify-self: right;
-  padding-top: 8px;
+  padding-top: 25px;
 }
 
 .basket-img {
@@ -165,6 +166,11 @@ img {
 
 /* Slider */
 
+.main-slider-bar {
+  margin: 0;
+  padding: 0;
+}
+
 .slider {
   background-color: var(--basic-blue);
   display: grid;
@@ -172,7 +178,7 @@ img {
 }
 
 .slider-promo {
-  margin-top: 16px;
+  margin-top: 26px;
 }
 
 .btn-more {
@@ -192,9 +198,10 @@ img {
 }
 
 .slider-img {
-  border: 1px solid red;
-  padding: 0;
-  margin: 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin: 0px;
+  height: 431px;
 }
 
 .slider-btn-block {
@@ -212,26 +219,32 @@ img {
 
 .work {
   margin-top: 80px;
-  margin-bottom: 121px;
+  margin-bottom: 80px;
 }
 
 .work-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
+ul:last-child .work-item-last  {
+  margin-right: 0px;
+  }
+
 .work-item {
-  justify-self: left;
+  width: 300px;
+  justify-content: flex-start;
+  padding: 0px;
+  margin-right: 100px;
+  margin-bottom: 0px;
 }
 
 h3 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 15px;
   text-transform: uppercase;
 }
 
@@ -256,6 +269,7 @@ h3 {
   margin-bottom: 75px;
   border-top: 2px solid var(--basic-blue);
   padding-top: 39px;
+  margin-top: 0px;
 }
 
 .about-us-text {
@@ -289,15 +303,21 @@ h3 {
   line-height: 45px;
   font-weight: 500;
   color: var(--text-black);
+  margin-top: 35px;
+  margin-bottom: 36px;
 }
+
 
 .heading-list {
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 25px;
 }
 
 .img-grey {
   background-color: var(--basic-light-grey);
+  margin-left: 15px;
 }
 
 .after-logo {
@@ -305,13 +325,15 @@ h3 {
   color: var(--text-black);
   text-align: center;
   text-transform: uppercase;
-  margin-top: 37px;
+  margin-top: 30px;
   margin-bottom: 31px;
+  margin-left: 15px;
+
 }
 
 table {
   border-collapse: collapse;
-
+  margin-top: 50px;
 }
 
 th {
@@ -342,9 +364,9 @@ td {
 .btn-order1,
 .btn-order2,
 .btn-order3 {
-  padding: 15px 40px;
+  padding: 13px 40px;
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 15px;
 }
 
 .btn-red,
@@ -397,7 +419,7 @@ td {
   align-items: center;
   justify-content: space-between;
   height: 180px;
-  padding: auto;
+  /* padding: auto; */
   border-top: 2px solid var(--basic-blue);
   border-bottom: 2px solid var(--basic-blue);
 }
